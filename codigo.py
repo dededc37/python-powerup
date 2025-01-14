@@ -54,9 +54,9 @@ for linha in tabela.index:
     press("tab")
 
     #obs
-    obs = tabela.loc[linha, "obs"]
+    obs = str(tabela.loc[linha, "obs"])
     if obs != "nan":
-        write(str(obs))
+        write(obs)
     press("tab")
 
     press("enter")
